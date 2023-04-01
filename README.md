@@ -33,9 +33,9 @@ $date = CarbonFiscalYear::parse("2022-03-30");
 $date->startOfYear()->format("Y-m-d"); // 2021-04-01
 $date->endOfYear()->format("Y-m-d"); // 2022-03-31
 
-$date = CarbonFiscalYear::parse("2023-04-02");
-$date->startOfYear()->format("Y-m-d"); // 2023-04-01
-$date->endOfYear()->format("Y-m-d"); // 2024-03-31
+$date = CarbonFiscalYear::parse("2022-04-02");
+$date->startOfYear()->format("Y-m-d"); // 2022-04-01
+$date->endOfYear()->format("Y-m-d"); // 2023-03-31
 ```
 
 ## Testing
