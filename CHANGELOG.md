@@ -2,6 +2,12 @@
 
 All notable changes to `carbon-extensions` will be documented in this file.
 
+## v0.2.1 - 2023-04-06
+
+### Fixed
+
+- fixed start/end of year
+
 ## v0.2.0 - 2023-04-06
 
 ### Added
