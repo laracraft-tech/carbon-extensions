@@ -2,6 +2,8 @@
 
 namespace LaracraftTech\CarbonExtensions;
 
+use Carbon\CarbonInterface;
+
 trait CarbonFiscalYearTrait
 {
     /**
@@ -36,7 +38,7 @@ trait CarbonFiscalYearTrait
         }
     }
 
-    public function startOfYear(): CarbonFiscalYear
+    public function startOfYear(): CarbonInterface
     {
         $year = $this->year;
 
@@ -49,7 +51,7 @@ trait CarbonFiscalYearTrait
         return $this->setDate($year, self::$fiscalYearStartMonth, self::$fiscalYearStartDay)->startOfDay();
     }
 
-    public function endOfYear(): CarbonFiscalYear
+    public function endOfYear(): CarbonInterface
     {
         return $this->startOfYear()->copy()->addYear()->subDay()->endOfDay();
     }
