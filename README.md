@@ -25,6 +25,9 @@ composer require laracraft-tech/carbon-extensions
 The `CarbonFiscalYear` class helps you to work with **fiscal years**!
 It easily lets you know the fiscal years **start** and **end** of a given date.
 
+**Note:** There is also a `CarbonFiscalYearImmutable`, class which has the same API,
+but it works _immutable_. For more information on _immutables_, check out the [carbon docs](https://carbon.nesbot.com/docs/).
+
 ```php
 // set your fiscal year start month and day 
 CarbonFiscalYear::setFiscalYearStart(4, 1);
@@ -33,9 +36,9 @@ $date = CarbonFiscalYear::parse("2022-03-30");
 $date->startOfYear()->format("Y-m-d"); // 2021-04-01
 $date->endOfYear()->format("Y-m-d"); // 2022-03-31
 
-$date = CarbonFiscalYear::parse("2022-04-02");
-$date->startOfYear()->format("Y-m-d"); // 2022-04-01
-$date->endOfYear()->format("Y-m-d"); // 2023-03-31
+$date2 = CarbonFiscalYear::parse("2022-04-02");
+$date2->startOfYear()->format("Y-m-d"); // 2022-04-01
+$date2->endOfYear()->format("Y-m-d"); // 2023-03-31
 ```
 
 ## Testing

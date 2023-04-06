@@ -2,9 +2,9 @@
 
 namespace LaracraftTech\CarbonExtensions;
 
-use Carbon\Carbon;
+use Carbon\CarbonImmutable;
 
-class CarbonFiscalYear extends Carbon
+class CarbonFiscalYearImmutable extends CarbonImmutable
 {
     use CarbonFiscalYearTrait;
 
