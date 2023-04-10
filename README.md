@@ -1,4 +1,4 @@
-# Some useful extension for the carbon library!
+# Carbon Extensions
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laracraft-tech/carbon-extensions.svg?style=flat-square)](https://packagist.org/packages/laracraft-tech/carbon-extensions)
 [![Tests](https://github.com/laracraft-tech/carbon-extensions/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/laracraft-tech/carbon-extensions/actions/workflows/run-tests.yml)
